@@ -18,6 +18,7 @@ Plug 'junegunn/goyo.vim', { 'for': 'markdown' }
 call plug#end()
 
 " configure
+set nocompatible
 hi Normal ctermfg=grey ctermbg=black
 syntax on          " syntax highlight
 set background=dark
@@ -38,13 +39,17 @@ set nohlsearch
 set incsearch
 set gdefault       " search/replace gloabl by default
 
-set textwidth=80
+" set textwidth=80
+set wrap
 
 set tabstop=4
 set softtabstop=4
 set shiftwidth=4
 set expandtab
 set smartindent
+set cindent
+
+set backspace=indent,eol,start
 
 " key map
 let mapleader=" "
