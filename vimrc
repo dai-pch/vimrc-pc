@@ -19,12 +19,10 @@ call plug#end()
 
 " configure
 set nocompatible
-hi Normal ctermfg=grey ctermbg=black
 syntax on          " syntax highlight
 set background=dark
-" highlight Normal ctermbg=black
 colorscheme solarized
-highlight Normal ctermfg=grey
+highlight Normal ctermfg=grey ctermbg=black
 set nu             " show row number
 set showcmd        " show input in normal mode
 set scrolloff=5    " distance between cursor and bottom when scroll down 
