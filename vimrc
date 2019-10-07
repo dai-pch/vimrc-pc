@@ -1,3 +1,5 @@
+" general config
+
 " install vim-plug
 if empty(glob('~/.vim/autoload/plug.vim'))
   silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
@@ -51,6 +53,9 @@ set backspace=indent,eol,start
 
 " key map
 let mapleader=" "
+" reload config
+cnoremap so source $MYVIMRC
+
 nmap <tab> >>
 nmap <S-tab> <<
 vmap <tab> >gv
@@ -61,4 +66,17 @@ nnoremap <leader>O mtO<Esc>`t
 
 nnoremap <silent> g; g;zz
 nnoremap <silent> g, g,zz
+
+" window
+nmap <leader>w <C-w>
+" tab
+nmap <leader>tc :tabnew<CR>
+nmap <leader>te :tabedit
+nmap <leader>tn gt
+nmap <leader>tp gT
+
+" Plugs config
+" NERDTree
+let NERDTreeShowHidden=1
+map <leader>d :NERDTreeToggle<CR>
 
